@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <title>Add Text Fields</title>
+    <script src="add.js"></script>
+    <style>
+        label{
+            color: blue;
+            font-style: italic;
+        }
+        input
+        {
+           border-radius: 12px;
+           border-color: skyblue;
+           border-spacing: 2px;
+        }
+        .subject {
+            margin: 2%;
+        }
+    
+        .subject-row {
+            margin-bottom: 10px;
+        }
+      
+        p{
+            font-size: 20px;
+            background-color: skyblue;
+            font-style: italic ;
+            
+        }
+    </style>
+</head>
+<body><center>
+    <span><p>SGPA CALCULATOR</p></span>
+    <div class="subject" id="subject">
+        <div class="subject-row">
+            <label for="credit0">Credit:</label>
+            <input type="text" id="credit0" class="textfield">
+            <label for="grade0">Grade:</label>
+            <input type="text" id="grade0" class="textfield"><br>
+        </div>
+       
+    </div>
+    <button type="button" class="btn btn-primary" id="add-button" onclick="add()" style="margin-right: 4px;">Add Subject</button>
+    <button type="button" class="btn btn-primary" id="cal-button" onclick="cal()">Calculate</button><br>
+    <p id="sgpa"></p>
+</body>
+</html>
